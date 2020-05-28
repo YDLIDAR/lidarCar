@@ -133,8 +133,9 @@ static void dis_task(void *arg) {
 
 void setup() {
   M5.begin();
+  M5.Speaker.begin();
+  
   setLcd();
-  dacWrite(25, 0);
   Serial.println("ESPNow/Basic/Slave Example");
   //Set device in AP mode to begin with
   

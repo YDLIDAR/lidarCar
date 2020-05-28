@@ -1,0 +1,18 @@
+## X2lidarBot
+### Control and display
+Coco and the handle achieve communication through EspNow. Point cloud(map) would be displayed on the screen, and the handle can control COCO.
+
+-Normal control mode: Move the joystick, COCO will realize forward, backward and steering.
+-Omnidirectional control mode: Hold down the A button of the handle,  (the leftmost one)and then move the joystick to achieve the left and right horizontal movement.
+Notice: The front and back directions are reversed.
+
+### Connect and match
+In the unconnected state or when one party is not connected to the other, the display or control may have problems. At this time, please re-connect them.
+
+-STEP 1:Keep holding the C button and press the power button one time. Wait for the screen to restart and then release the C button to enter the broadcast mode.
+All slaves will receive the signal from the master.
+-When COCO enters the broadcast mode, repeat STEP 1  to see the current broadcast host on the screen.  Button A/C means up and down, and button B means to confirm. The Mac address of the host can be viewed from the mobile phone or computer near Wi-Fi. The host starts with lidar and is followed by the host Mac address.
+-After confirming the master, the screen of the master and COCO will receive the confirmation signal of the slave, and the address of the slave and the handle will also be selected and determined by the ABC key. After pressing the B key to confirm, COCO and the handlebar have completed the communication configuration, and the two parties can send messages to each other to realize the Lidar chart display and handlebar control.
+
+### Web page shows the Lidar image
+If you don't want to match the handle and COCO, please visit 192.168.4.1/map to check the Lidar chart information.
